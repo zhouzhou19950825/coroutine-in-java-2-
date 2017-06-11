@@ -166,6 +166,5 @@ public class Scheduler {
 
 >3、需要一个TimeUtile来操控任务的时间上的调度。
 
-源码下载地址:<a href="https://github.com/zhouzhou19950825/coroutine-in-java" target="_blank"> [ 点击链接]
 
 后续还会不断的更新完善，也需要大家的宝贵意见，慢慢的把她完善！
