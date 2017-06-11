@@ -13,9 +13,12 @@
 ## Python中简单的协程实现原理
 >Python中实现的协程（Python原生的generator，不是greenlet这些库）
  
-    1、每个要运行的成为Task(类似于线程或进程，其实是运行在这里的主协程上)
-    2、需要一个scheduler用来调度任务执行
-    3、需要一个loop，不断去读取队列queue。
+    1、每个要运行的成为Task(类似于线程或进程，其实是运行在这里的主协程上)。
+    
+    2、需要一个scheduler用来调度任务执行。
+    
+    3、需要一个loop，不断去读取队列queue。
+    
     
  每一个task都拥有一个唯一的tid。
  
@@ -24,10 +27,10 @@
 下面是一副工作原理图（用edraw画的，比较难看，有啥好的工具多多推介）：
 ![这里写图片描述](http://img.blog.csdn.net/20170611165506566?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvcXFfMzg3MjQyOTU=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/SouthEast)
 
-1、任务调度器（Scheduler）
-2、Task
-3、Map存储Task
-4、queue放入准备执行的任务
+    1、任务调度器（Scheduler）。
+    2、Task。
+    3、Map存储Task。
+    4、queue放入准备执行的任务。
 
 
 ## Java(Kilim)框架
