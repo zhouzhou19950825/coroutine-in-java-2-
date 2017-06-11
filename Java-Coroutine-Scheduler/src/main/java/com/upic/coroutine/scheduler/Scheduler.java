@@ -36,7 +36,7 @@ public class Scheduler {
 		mTasks = new ArrayList<>();
 	}
 
-	public Scheduler(int num, CommonPool commonPool) {
+	private Scheduler(int num, CommonPool commonPool) {
 		this();
 		this.commonPool = commonPool;
 		dealTaskNum = num;
